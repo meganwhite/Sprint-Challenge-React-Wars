@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div>
+      <div className="cards">
         {names.map(name => {
         return <CharCard key={name} name={name} homeworld= {planets[0]}/>
       })}

@@ -1,11 +1,15 @@
 import React from "react";
+import {Image} from "./StyledWidgets";
+import './StarWars.css';
 
 export default function CharCard({name,homeworld}) {
     return (
         <div className = "char-card">
-            <img src="https://freedesignfile.com/upload/2017/08/astronaut-icon-vector.png"/>
-            <h2>{name}</h2>
-            <a href={homeworld}>{homeworld}</a>
+            <Image src="https://freedesignfile.com/upload/2017/08/astronaut-icon-vector.png"/>
+            <div className = "card-text">
+                <h2>{name}</h2>
+                <p>Homeworld: <a href={homeworld}>{homeworld}</a></p>
+            </div>
         </div>
     );
 }
